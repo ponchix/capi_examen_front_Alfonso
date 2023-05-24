@@ -1,1 +1,18 @@
-<p>tabla-usuarios works!</p>
+<table class="table">
+  <thead class="bg-secondary text-center text-white">
+    <tr>
+      <th>Nombre</th>
+      <th>Fecha de nacimiento</th>
+      <th>Edad</th>
+      <th>direccion</th>
+    </tr>
+  </thead>
+  <tbody class="text-center ">
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.fecha_nacimiento }}</td>
+      <td>{{ user.edad }} años</td>
+      <td>{{user.domicilio}} {{user.numero_exterior}} {{user.colonia}} {{user.cp}} {{user.ciudad}}</td>
+    </tr>
+  </tbody>
+</table>
